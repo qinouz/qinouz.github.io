@@ -15,5 +15,5 @@ jQuery(document).ready(function($) {
 		$('.page').hide();
 		$('.s-page').show();
 		$('.s-page .s-box input').focus();
-	});
+	});    
 })
