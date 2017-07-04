@@ -1,0 +1,21 @@
+/*公共类*/
+
+/*水平垂直居中*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*纵向排列居中*/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*两端对齐*/
+.flex-swp {
+  display: flex;
+  justify-content: space-between;
+}
