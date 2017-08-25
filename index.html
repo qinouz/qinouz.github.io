@@ -3,54 +3,48 @@
 <script type="text/javascript">
 
 
-  function getBrowserInfo() {
-    var Sys = {};
-    var ua = navigator.userAgent.toLowerCase();
-    var s; (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
-      (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
-        (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
-          (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
-            (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+     var ua = navigator.userAgent.toLowerCase()
+    function getBrowserInfo () {
+      var Sys = {}
+      var s
+      (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] : (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] : (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] : (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] : (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0
 
-    if(Sys.ie) {
-      return 'IE: ' + Sys.ie;
+      if (Sys.ie) {
+        return 'IE: ' + Sys.ie
+      }
+      if (Sys.firefox) {
+        return 'Firefox: ' + Sys.firefox
+      }
+      if (Sys.chrome) {
+        return 'Chrome: ' + Sys.chrome
+      }
+      if (Sys.opera) {
+        return 'Opera: ' + Sys.opera
+      }
+      if (Sys.safari) {
+        return 'Safari: ' + Sys.safari
+      }
     }
-    if(Sys.firefox) {
-      return 'Firefox: ' + Sys.firefox;
+    var browser = getBrowserInfo()
+    var verinfo = parseInt((browser + '').replace(/[^0-9.]/ig, ''))   // 版本号
+    function serch ( ){
+      var a=ua.indexOf('(')
+      var s=ua.slice(a,ua.length-1);
+      var b=s.match(/\d+/g)
+      if(parseInt(b[0])<9){
+        alert('Safari浏览器版本过低，，如使用低版本Safari浏览器，将导致页面无法正常显示！')
+      }
     }
-    if(Sys.chrome) {
-      return 'Chrome: ' + Sys.chrome;
-    }
-    if(Sys.opera) {
-      return 'Opera: ' + Sys.opera;
-    }
-    if(Sys.safari) {
-      return 'Safari: ' + Sys.safari;
-    }
-  }
-  var browser = getBrowserInfo() ;
-  var uacc = window.navigator.userAgent.toLowerCase()
-
-  var verinfo = parseInt((browser + '').replace(/[^0-9.]/ig, ''))   // 版本号
-    alert(verinfo)
-    alert(browser)
-    alert(uacc)
-  if (browser.indexOf('IE') >= 0 && verinfo < 11) {
-      alert('IE浏览器版本过低，如使用低版本IE浏览器，会降低您的体验效果')
-    }
-
-    if (browser.indexOf('Chrome') >= 0 && verinfo < 41) {
-      alert('Chrome浏览器版本过低，如使用低版本浏览器，会降低您的体验效果')
-    }
-  if (browser.indexOf('chrome') >= 0 && verinfo < 41) {
-      alert('Chrome浏览器版本过低，如使用低版本浏览器，会降低您的体验效果')
-    }
-
-    if (browser.indexOf('Safari') >= 0 && verinfo < 9) {
-      alert('Safari，如使用低版本浏览器，会降低您的体验效果')
-    }
-  if (browser.indexOf('safari') >= 0 && verinfo < 9) {
-      alert('Safari，如使用低版本浏览器，会降低您的体验效果')
+    if (browser.indexOf('IE') >= 0 && verinfo < 11) {
+//      alert('IE浏览器版本过低，如使用低版本IE浏览器，将导致页面无法正常显示！')
+    } else if (browser.indexOf('Chrome') >= 0 && verinfo < 41) {
+      alert('Chrome浏览器版本过低，如使用低版本Chrome浏览器，将导致页面无法正常显示！')
+    } else if (browser.indexOf('Safari') >= 0 && verinfo < 9) {
+      alert('Safari浏览器版本过低，，如使用低版本Safari浏览器，将导致页面无法正常显示！')
+    } else if(ua.match(/MicroMessenger/i)=="micromessenger" && ua.indexOf('iphone') > 0) {
+      serch()
+    } else if (ua.indexOf('iphone') > 0){
+      serch()
     }
 </script>
 </body>
