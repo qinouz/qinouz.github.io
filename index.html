@@ -31,10 +31,21 @@
   var browser = getBrowserInfo() ;
   var uacc = window.navigator.userAgent.toLowerCase()
 
-  var verinfo = (browser+"").replace(/[^0-9.]/ig, "");   // 版本号
+  var verinfo = parseInt((browser + '').replace(/[^0-9.]/ig, ''))   // 版本号
     alert(verinfo)
     alert(browser)
     alert(uacc)
+  if (browser.indexOf('IE') >= 0 && verinfo < 11) {
+      alert('IE浏览器版本过低，如使用低版本IE浏览器，会降低您的体验效果')
+    }
+
+    if (browser.indexOf('Chrome') >= 0 && verinfo < 40) {
+      alert('Chrome浏览器版本过低，如使用低版本IE浏览器，会降低您的体验效果')
+    }
+
+    if (browser.indexOf('Safari') >= 0 && verinfo < 9) {
+      alert('Safari，如使用低版本IE浏览器，会降低您的体验效果')
+    }
 </script>
 </body>
 </html>
