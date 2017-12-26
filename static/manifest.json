@@ -4,13 +4,23 @@
 //  应用短名称，用于主屏幕显示
   "short_name": "桌面名称",
   "icons": [
+//    {
+//      "src": "/static/img/icons/android-chrome-192x192.png",
+//      "sizes": "96x96",
+//      "type": "image/png"
+//    },
+//    {
+//      "src": "/static/img/icons/android-chrome-512x512.png",
+//      "sizes": "144x144",
+//      "type": "image/png"
+//    },
     {
-      "src": "/static/img/icons/android-chrome-192x192.png",
+      "src": "/static/img/icons/m96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/static/img/icons/android-chrome-512x512.png",
+      "src": "/static/img/icons/m144.png",
       "sizes": "144x144",
       "type": "image/png"
     }
@@ -18,7 +28,7 @@
   "start_url": "/index.html",
   "display": "standalone",
 //  启动动画北京颜色
-  "background_color": "#000000",
+  "background_color": "#222",
   /* 定义状态栏颜色 */
-  "theme_color": "#4DBA87"
+  "theme_color": "#ccc"
 }
