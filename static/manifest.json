@@ -19,7 +19,7 @@
 //  自定义显示类型
   "display": "standalone",
 //  启动动画北京颜色
-  "background_color": "#1269D3",
+  "background_color": "#000",
   /* 定义状态栏颜色 */
   "theme_color": "#ccc"
 }
