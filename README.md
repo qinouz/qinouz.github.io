@@ -1,3 +1,2 @@
 # qinouz.github.io
-my blog
-sadas
+测试 PWA demo
