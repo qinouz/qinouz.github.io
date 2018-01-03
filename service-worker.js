@@ -22,10 +22,10 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([
   {
     "url": "/index.html",
-    "revision": "88c53de2d5c7cbf8b9273d44bce966e3"
+    "revision": "8ede561152ce7e6b4f58c87f13d778a9"
   },
   {
-    "url": "/static/css/index.4d49007a.css"
+    "url": "/static/css/index.eed546eb.css"
   },
   {
     "url": "/static/fonts/MaterialIcons-Regular.012cf6a1.woff"
@@ -42,26 +42,22 @@ workboxSW.precache([
     "revision": "012cf6a10129e2275d79d6adac7f3b02"
   },
   {
-    "url": "/static/js/index.d39eb856.js"
+    "url": "/static/js/index.8e095f42.js"
   },
   {
-    "url": "/static/js/manifest.70e64f76.js"
+    "url": "/static/js/manifest.ea441611.js"
   },
   {
-    "url": "/static/js/vendor.8e2789b6.js"
+    "url": "/static/js/vendor.9513ebc5.js"
   },
   {
-    "url": "/static/js/vue.a8d80349.js"
+    "url": "/static/js/vue.85880a42.js"
   },
   {
     "url": "/static/js/workbox-sw.prod.v2.1.2.js",
     "revision": "685d1ceb6b9a9f94aacf71d6aeef8b51"
-  },
-  {
-    "url": "/appshell",
-    "revision": "c40784fc425ae339c37849d77c652d9b"
   }
 ]);
 
 // Define response for HTML request.
-workboxSW.router.registerNavigationRoute('/appshell');
+// workboxSW.router.registerNavigationRoute('/appshell');
