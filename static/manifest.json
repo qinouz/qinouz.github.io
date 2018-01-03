@@ -1,25 +1,30 @@
 {
-//  应用名称，用于安装横幅、启动画面显示
-  "name": "完整名称",
-//  应用短名称，用于主屏幕显示
-  "short_name": "桌面名称",
-  "icons": [
-    {
-      "src": "/static/img/icons/m96.png",
-      "sizes": "96x96",
-      "type": "image/png"
-    },
-    {
-      "src": "/static/img/icons/m144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/index.html",
-//  自定义显示类型
-  "display": "standalone",
-//  启动动画北京颜色
-  "background_color": "#000",
-  /* 定义状态栏颜色 */
-  "theme_color": "#ccc"
+    "start_url": "/?utm_source=homescreen",
+    "name": "pwa-project",
+    "short_name": "pwa-project",
+    "icons": [
+        {
+            "src": "img/icons/android-chrome-512x512.png",
+            "type": "image/png",
+            "size": "512x512"
+        },
+        {
+            "src": "img/icons/android-chrome-192x192.png",
+            "type": "image/png",
+            "size": "192x192"
+        },
+        {
+            "src": "img/icons/apple-touch-icon-180x180.png",
+            "type": "image/png",
+            "size": "180x180"
+        },
+        {
+            "src": "img/icons/apple-touch-icon-152x152.png",
+            "type": "image/png",
+            "size": "152x152"
+        }
+    ],
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#278fef"
 }
