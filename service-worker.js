@@ -22,10 +22,10 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([
   {
     "url": "/index.html",
-    "revision": "ea79c83be8c38967ee2926866ddae9c7"
+    "revision": "88c53de2d5c7cbf8b9273d44bce966e3"
   },
   {
-    "url": "/static/css/index.eed546eb.css"
+    "url": "/static/css/index.4d49007a.css"
   },
   {
     "url": "/static/fonts/MaterialIcons-Regular.012cf6a1.woff"
@@ -42,16 +42,16 @@ workboxSW.precache([
     "revision": "012cf6a10129e2275d79d6adac7f3b02"
   },
   {
-    "url": "/static/js/index.d0adce23.js"
+    "url": "/static/js/index.d39eb856.js"
   },
   {
-    "url": "/static/js/manifest.1dcca4f1.js"
+    "url": "/static/js/manifest.70e64f76.js"
   },
   {
-    "url": "/static/js/vendor.9513ebc5.js"
+    "url": "/static/js/vendor.8e2789b6.js"
   },
   {
-    "url": "/static/js/vue.85880a42.js"
+    "url": "/static/js/vue.a8d80349.js"
   },
   {
     "url": "/static/js/workbox-sw.prod.v2.1.2.js",
@@ -59,7 +59,7 @@ workboxSW.precache([
   },
   {
     "url": "/appshell",
-    "revision": "62aacd70ae240a48106fbb856ac21908"
+    "revision": "c40784fc425ae339c37849d77c652d9b"
   }
 ]);
 
